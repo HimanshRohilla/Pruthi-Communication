@@ -24,7 +24,6 @@ function App() {
     });
   };
 
-  // Animation variants
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -73,11 +72,8 @@ function App() {
         `}
       </style>
 
-      {/* Gradient Background */}
       <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#1e232b] via-[#2b313b] to-[#3a4251]"></div>
-
       <div className="min-h-screen flex flex-col text-white font-inter relative overflow-x-hidden">
-        {/* Back to Top Button */}
         <motion.button
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 z-40 p-3 bg-[#d3a73b] rounded-full shadow-lg hover:bg-[#c59b2e] transition-all duration-300"
@@ -90,8 +86,6 @@ function App() {
         >
           <FaChevronUp className="text-lg" />
         </motion.button>
-
-        {/* Enhanced Navbar */}
         <motion.header
           className="w-full px-4 sm:px-6 lg:px-8 z-50 sticky top-0"
           initial={{ y: -100 }}
@@ -101,14 +95,12 @@ function App() {
           <div className="max-w-7xl mx-auto">
             <nav className="my-2 sm:my-3 p-3 rounded-xl border border-[#d3a73b]/30 backdrop-blur-md bg-[#2b313b]/90 flex justify-between items-center shadow-md hover:shadow-lg transition-shadow duration-300">
               <motion.a
-                href="/" // Replace with your actual website URL if different
+                href="https://pruthielectronics.vercel.app/"
                 className="text-xl sm:text-2xl font-playfair text-white hover:text-[#d3a73b] transition-colors duration-300 cursor-pointer"
                 whileHover={{ scale: 1.05 }}
               >
                 Pruthi Electronics
               </motion.a>
-
-              {/* Desktop Navigation */}
               <motion.div
                 className="hidden sm:flex space-x-4 text-lg"
                 initial={{ opacity: 0 }}
@@ -130,8 +122,6 @@ function App() {
                   Contact
                 </motion.a>
               </motion.div>
-
-              {/* Mobile Menu Button */}
               <motion.button
                 className="sm:hidden text-white focus:outline-none hover:text-[#d3a73b] transition-colors duration-300"
                 onClick={toggleMenu}
@@ -142,8 +132,6 @@ function App() {
                 {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
               </motion.button>
             </nav>
-
-            {/* Mobile Menu */}
             <AnimatePresence>
               {isMenuOpen && (
                 <motion.div
@@ -174,13 +162,9 @@ function App() {
             </AnimatePresence>
           </div>
         </motion.header>
-
-        {/* Main Content Container */}
         <main className="flex-1 w-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            {/* Hero Section */}
             <section className="relative w-full flex flex-col lg:flex-row items-center py-12 sm:py-16 md:py-20 z-10">
-              {/* Text Content */}
               <motion.div
                 className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left"
                 initial="hidden"
@@ -204,7 +188,6 @@ function App() {
                   <span className="text-[#d3a73b]">personalized support</span>.
                 </motion.p>
 
-                {/* Social Icons */}
                 <motion.div
                   className="flex justify-center lg:justify-start gap-5 mb-8"
                   variants={container}
@@ -248,7 +231,6 @@ function App() {
                 </motion.div>
               </motion.div>
 
-              {/* Image Gallery */}
               <motion.div
                 className="w-full lg:w-1/2 mt-8 lg:mt-0"
                 initial={{ opacity: 0, x: 50 }}
@@ -280,7 +262,6 @@ function App() {
               </motion.div>
             </section>
 
-            {/* About Section */}
             <section id="about" className="py-12 sm:py-16 md:py-20 relative">
               <motion.div
                 className="bg-[#2b313b]/60 backdrop-blur-md rounded-xl p-6 sm:p-8 border border-[#d3a73b]/30 shadow-lg"
@@ -352,7 +333,6 @@ function App() {
               </motion.div>
             </section>
 
-            {/* Contact Section */}
             <section id="contact" className="py-12 sm:py-16 md:py-20 relative">
               <motion.div
                 className="bg-[#2b313b]/60 backdrop-blur-md rounded-xl p-6 sm:p-8 border border-[#d3a73b]/30 shadow-lg"
@@ -404,7 +384,7 @@ function App() {
                           Ankit Pruthi (Owner)
                         </p>
                         <p className="text-sm text-[#d3a73b] mt-2 font-medium font-inter">
-                          Mon-Sat: 9AM - 8PM
+                          Mon-Sat: 9AM - 9PM
                         </p>
                       </div>
                     </motion.div>
@@ -472,8 +452,7 @@ function App() {
             </section>
           </div>
         </main>
-
-        {/* Enhanced Footer */}
+        
         <motion.footer
           className="bg-[#1e232b] text-center py-8 text-sm text-[#8c94a4] font-inter border-t border-[#d3a73b]/20"
           initial={{ opacity: 0 }}
