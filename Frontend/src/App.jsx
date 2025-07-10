@@ -8,6 +8,7 @@ import {
   FaBars,
   FaTimes,
   FaChevronUp,
+  FaEnvelope,
 } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { useState } from "react";
@@ -204,6 +205,7 @@ function App() {
                   >
                     <FaInstagram className="text-2xl" />
                   </motion.a>
+
                   <motion.a
                     href="https://www.facebook.com/share/16rGSVTdJJ/"
                     target="_blank"
@@ -216,8 +218,9 @@ function App() {
                   >
                     <FaFacebook className="text-2xl" />
                   </motion.a>
+
                   <motion.a
-                    href="https://wa.me/919996666524?text=Hello%2C%20I%20came%20across%20your%20website%20and%20I'm%20interested%20in%20your%20electronics%20offerings.%20Could%20you%20please%20provide%20more%20information%3F"
+                    href="https://whatsapp.com/channel/0029Va5By4TIyPtYjwHEyY3K"
                     target="_blank"
                     rel="noreferrer"
                     className="p-3 rounded-full bg-gradient-to-tr from-[#128C7E] via-[#25D366] to-[#1EBEA5] border border-[#25D366]/50 hover:brightness-110 transition-all duration-300 text-white shadow-md"
@@ -227,6 +230,23 @@ function App() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <BsWhatsapp className="text-2xl" />
+                  </motion.a>
+
+                  <motion.a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=pruthielectronics1996@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-3 rounded-full bg-white border border-gray-200 hover:shadow-md transition-all duration-300 shadow-sm"
+                    aria-label="Gmail"
+                    variants={item}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <img
+                      src="https://img.icons8.com/color/48/gmail-new.png"
+                      alt="Gmail"
+                      className="w-6 h-6"
+                    />
                   </motion.a>
                 </motion.div>
               </motion.div>
@@ -255,7 +275,7 @@ function App() {
                       initial={{ y: 20 }}
                       animate={{ y: 0 }}
                     >
-                      Premium Electronics Collection
+                      Pruthi Electronics
                     </motion.p>
                   </div>
                 </motion.div>
@@ -452,7 +472,7 @@ function App() {
             </section>
           </div>
         </main>
-        
+
         <motion.footer
           className="bg-[#1e232b] text-center py-8 text-sm text-[#8c94a4] font-inter border-t border-[#d3a73b]/20"
           initial={{ opacity: 0 }}
